@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascoa</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {}
+
+        header div {
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 60px;
+        }
+
+        .cartao {
+            height: 400px;
+            width: 300px;
+            background-color: rgb(63, 8, 0);
+            border-radius: 10px;
+            cursor: grab;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="titulo"></h1>
+            <p>/Feliz Páscoa...</p>
+        </div>
+        <h2>Descubra um pouco mais sobre essa data tão importate e conhecida, de uma forma interativa e divertida...</h2>
+    </header>
+    <main>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <div class="cartao"></div>
+        <p>Faça uma bagunça, depois é só resetar</p>
+        <button onclick="resetarPosicoes()">Resetar posições</button>
+    </main>
+</body>
+<script>
+    const typewriter = document.getElementById("titulo");
+    const speed = 130;
+
+    const textos = {
+        pt: "Feliz Páscoa!",
+        en: "Happy Easter!",
+        fr: "Joyeuses Pâques!",
+        es: "¡Feliz Pascua!",
+        it: "Buona Pasqua!",
+        de: "Frohe Ostern!",
+        nl: "Vrolijk Pasen!"
+    };
+    const idiomas = Object.keys(textos);
+
+    function typeEffect() {
+        typewriter.textContent = "";
+
+        const idiomaAleatorio = idiomas[Math.floor(Math.random() * idiomas.length)];
+        const texto = textos[idiomaAleatorio];
+
+        let index = 0;
+        function type() {
+            if (index < texto.length) {
+                typewriter.textContent += texto.charAt(index);
+                index++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+    }
+    typeEffect();
+    setInterval(typeEffect, 2000);
+
+    const divs = document.querySelectorAll("main > div");
+    const posicoesIniciais = [];
+
+    divs.forEach((div, index) => {
+        div.style.position = "absolute";
+
+        const offsetX = 500;
+        const offsetY = 300;
+
+        div.style.left = offsetX + "px";
+        div.style.top = offsetY + "px";
+
+        posicoesIniciais.push({ left: offsetX, top: offsetY });
+
+        let segurando = false;
+        let x, y;
+
+        div.addEventListener("mousedown", function (e) {
+            segurando = true;
+            x = e.clientX - div.offsetLeft;
+            y = e.clientY - div.offsetTop;
+            div.style.cursor = "grabbing";
+        });
+        document.addEventListener("mousemove", function (e) {
+            if (segurando) {
+                div.style.left = (e.clientX - x) + "px";
+                div.style.top = (e.clientY - y) + "px";
+            }
+        });
+        document.addEventListener("mouseup", function () {
+            segurando = false;
+            div.style.cursor = "grab";
+        });
+    });
+
+    function resetarPosicoes() {
+        divs.forEach((div, i) => {
+            div.style.left = posicoesIniciais[i].left + "px";
+            div.style.top = posicoesIniciais[i].top + "px";
+        });
+    }
+
+</script>
+
+</html>
