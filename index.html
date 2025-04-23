@@ -14,7 +14,9 @@
             padding: 0;
         }
 
-        header {}
+        header {
+            height: 15vh;
+        }
 
         header div {
             text-align: center;
@@ -23,15 +25,36 @@
         h1 {
             font-family: "Noto Sans KR", sans-serif;
             font-size: 60px;
+            height: 10vh;
+        }
+
+        h2 {
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        h3 {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 15px;
+        }
+
+        main {
+            height: 80vh;
         }
 
         .cartao {
-            height: 400px;
-            width: 300px;
-            background-color: rgb(63, 8, 0);
+            height: 500px;
+            width: 400px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
             border-radius: 10px;
             cursor: grab;
-            position: relative;
+            transition: 0.1s;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cartao p{
+            text-align: left;
         }
     </style>
 </head>
@@ -40,28 +63,163 @@
     <header>
         <div>
             <h1 id="titulo"></h1>
-            <p>/Feliz Páscoa...</p>
+            <h2>Descubra um pouco mais sobre essa data tão importate e conhecida, de uma forma interativa e divertida...
+            </h2>
         </div>
-        <h2>Descubra um pouco mais sobre essa data tão importate e conhecida, de uma forma interativa e divertida...</h2>
     </header>
     <main>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <div class="cartao"></div>
-        <p>Faça uma bagunça, depois é só resetar</p>
-        <button onclick="resetarPosicoes()">Resetar posições</button>
+        <div class="cartao" id="cartao10">
+            <h3>Página 10</h3> <br>
+            <p><strong>Lorem ipsum dolor sit amet <em>itálico</em></strong> <sup>3</sup>  <i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </i>text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.<del>Texto removido</del><sup>paragrafo</sup> <sub>10</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>Página 09</h3> <br>
+            <p><strong>Lorem ipsum dolor sit amet <em>itálico</em></strong> <sup>3</sup>  <i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.<del>Texto removido</del><sup>paragrafo</sup> <sub>9</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>Página 08</h3> <br>
+            <p><strong>Lorem ipsum dolor sit amet <em>itálico</em></strong> <sup>3</sup>  <i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.<del>Texto removido</del><sup>paragrafo</sup> <sub>8</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>Página 07</h3> <br>
+            <p><strong>Lorem ipsum dolor sit amet <em>itálico</em></strong> <sup>3</sup>  <i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.<del>Texto removido</del><sup>paragrafo</sup> <sub>7</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>Página 06</h3> <br>
+            <p><strong>Lorem ipsum dolor sit amet <em>itálico</em></strong> <sup>3</sup>  <i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.<del>Texto removido</del><sup>paragrafo</sup> <sub>6</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>Página 05</h3> <br>
+            <p><strong>Lorem ipsum dolor sit amet <em>itálico</em></strong> <sup>3</sup>  <i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </i>Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.<del>Texto removido</del><sup>paragrafo</sup> <sub>5</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>04 - De onde vieram os ovos de chocolate?</h3> <br>
+            <p><strong><em>A tradição dos ovos de chocolate</em></strong>  <i>na Páscoa tem suas raízes na Europa, </i>e a combinação do ovo com o
+                chocolate começou a se popularizar no século XIX.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O ovo, como símbolo de renovação e vida nova, já era
+                um elemento tradicional em celebrações de Páscoa, especialmente nas culturas pagãs e cristãs. No
+                entanto, os ovos eram originalmente de galinha e, com o tempo, passaram a ser decorados ou até mesmo
+                usados como presentes.
+                O uso de chocolate começou na França e na Alemanha no início do século XIX. O chocolate, que até então
+                era consumido principalmente em forma de bebidas quentes, foi moldado em ovos com o desenvolvimento de
+                técnicas de confeitaria e moldagem. Isso surgiu principalmente no contexto da Revolução Industrial,
+                quando novas tecnologias permitiram a produção em massa de chocolates mais acessíveis.
+                Os primeiros ovos de chocolate eram simples, mas com o tempo, passaram a ser recheados e decorados,
+                tornando-se a versão mais sofisticada que conhecemos hoje. A popularidade dos ovos de chocolate na
+                Páscoa cresceu principalmente a partir do final do século XIX e início do século XX, quando as empresas
+                de chocolate começaram a comercializá-los como parte das celebrações da Páscoa, associando-os ao símbolo
+                de renovação e celebração.<del>Texto removido</del><sup>paragrafo</sup> <sub>4</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>03 - De onde veio o Coelho?</h3> <br>
+            <p><strong><em> O coelho da Páscoa</em></strong> <i>tem origens que misturam tradições pagãs e cristãs.</i> A figura do coelho, conhecido por
+                sua alta fecundidade, é um símbolo antigo de fertilidade e renovação da vida, ligados às celebrações de
+                primavera, especialmente nas culturas germânicas e celta. Com o tempo, essas tradições foram integradas
+                à Páscoa cristã, que celebra a ressurreição e o renascimento. <br><br><br><br><br><br>
+                A história do coelho da Páscoa como o “portador de ovos” começou a ganhar força na Europa, especialmente
+                na Alemanha, por volta do século XVII. Ele era retratado como um animal que escondia ovos coloridos para
+                as crianças encontrarem. Quando os imigrantes alemães se estabeleceram nos Estados Unidos no século
+                XVIII, essa tradição foi se espalhando, até se tornar o símbolo que conhecemos hoje, ligado aos ovos de
+                chocolate e às festividades de Páscoa.<del>Texto removido</del><sup>paragrafo</sup> <sub>3</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>02 - Qual é o sentido da Páscoa?</h3> <br>
+            <p><strong><em>O sentido da Páscoa é,</em></strong>  <i>principalmente, o de celebração da </i>ressurreição de Jesus Cristo, um evento central
+                no cristianismo. Para os cristãos, a Páscoa representa a vitória da vida sobre a morte, a promessa de
+                salvação e a renovação espiritual. A ressurreição de Jesus simboliza a esperança de uma nova vida e a
+                possibilidade de perdão e reconciliação com Deus. <br><br>
+                Além do seu significado religioso, a Páscoa também é vista como um momento de reflexão sobre o amor, a
+                misericórdia e o sacrifício. Durante a Quaresma, que precede a Páscoa, os cristãos se preparam
+                espiritualmente, buscando um maior aprofundamento na fé e no sentido do perdão.
+                Culturalmente, a Páscoa é uma época de renovação, simbolizada por tradições como a troca de ovos, que
+                representam novos começos e a fertilidade. Ela também é um tempo de união familiar, celebrações e
+                partilhas, criando um momento de reflexão e renovação tanto no âmbito espiritual quanto no pessoal.<del>Texto removido</del><sup>paragrafo</sup> <sub>2</sub></p>
+        </div>
+        <div class="cartao">
+            <h3>01 - Oque é a Páscoa?</h3> <br>
+            <p><strong> <em>A Páscoa é</em></strong> <i>uma celebração cristã que marca a ressurreição de</i> Jesus Cristo, três dias após sua
+                crucificação. É um dos eventos mais importantes do cristianismo, simbolizando a vitória da vida sobre a
+                morte. Tradicionalmente, é comemorada com missas, encontros familiares e trocas de ovos de chocolate,
+                que representam a renovação e a vida nova. Além de seu significado religioso, a Páscoa também é
+                associada a diversas tradições culturais e festivas em diferentes partes do mundo.<del>Texto removido</del><sup>paragrafo</sup> <sub>1</sub></p>
+        </div>
+
     </main>
+    <footer>
+        <div>
+            <p>Se fizer uma bagunça com os cartóes, não se preocupe, depois é só resetar... <button
+                    onclick="resetarPosicoes()">Resetar posições</button></p>
+        </div>
+    </footer>
 </body>
 <script>
-    const typewriter = document.getElementById("titulo");
-    const speed = 130;
+    const exibirTexto = document.getElementById("titulo");
+    const speed = 0;
 
     const textos = {
         pt: "Feliz Páscoa!",
@@ -69,52 +227,66 @@
         fr: "Joyeuses Pâques!",
         es: "¡Feliz Pascua!",
         it: "Buona Pasqua!",
-        de: "Frohe Ostern!",
-        nl: "Vrolijk Pasen!"
+        jp: "イースター、おめでとう！",
+        ch: "复活节快乐！",
+        cr: "부활절 축복 받으세요!",
+        lt: "Felix Pascha!",
     };
+
     const idiomas = Object.keys(textos);
 
-    function typeEffect() {
-        typewriter.textContent = "";
+    function efeito() {
+        exibirTexto.textContent = "";
 
         const idiomaAleatorio = idiomas[Math.floor(Math.random() * idiomas.length)];
         const texto = textos[idiomaAleatorio];
 
-        let index = 0;
-        function type() {
-            if (index < texto.length) {
-                typewriter.textContent += texto.charAt(index);
-                index++;
-                setTimeout(type, speed);
-            }
-        }
-        type();
+        exibirTexto.style.transition = "text-shadow 1s ease-out, opacity 0.8s ease-in";
+        exibirTexto.style.textShadow = "0px 0px 20px rgba(0, 0, 0, 0.5)";
+        exibirTexto.style.opacity = "0";
+
+        setTimeout(() => {
+            exibirTexto.textContent = texto;
+            exibirTexto.style.opacity = "1";
+            setTimeout(() => {
+                exibirTexto.style.textShadow = "none";
+            }, 2000);
+        }, 500);
+        setTimeout(() => {
+            exibirTexto.style.opacity = "0";
+        }, 2000);
     }
-    typeEffect();
-    setInterval(typeEffect, 2000);
+
+    efeito();
+    setInterval(efeito, 3000);
 
     const divs = document.querySelectorAll("main > div");
     const posicoesIniciais = [];
+    const zIndexesIniciais = [];
 
     divs.forEach((div, index) => {
         div.style.position = "absolute";
 
-        const offsetX = 500;
-        const offsetY = 300;
+        const offsetX = 100 + index * 90;
+        const offsetY = 180;
 
         div.style.left = offsetX + "px";
         div.style.top = offsetY + "px";
 
         posicoesIniciais.push({ left: offsetX, top: offsetY });
+        zIndexesIniciais.push(1);
 
         let segurando = false;
         let x, y;
 
+        let zIndex = 1;
         div.addEventListener("mousedown", function (e) {
             segurando = true;
+            let contadorzIndex = zIndex + 1;
             x = e.clientX - div.offsetLeft;
             y = e.clientY - div.offsetTop;
             div.style.cursor = "grabbing";
+            div.style.zIndex = "0" + zIndex;
         });
         document.addEventListener("mousemove", function (e) {
             if (segurando) {
@@ -124,7 +296,9 @@
         });
         document.addEventListener("mouseup", function () {
             segurando = false;
+            zIndex = zIndex + 1;
             div.style.cursor = "grab";
+            div.style.zIndex = "10" + contadorzIndex;
         });
     });
 
@@ -132,6 +306,7 @@
         divs.forEach((div, i) => {
             div.style.left = posicoesIniciais[i].left + "px";
             div.style.top = posicoesIniciais[i].top + "px";
+            div.style.zIndex = zIndexesIniciais[i];
         });
     }
 
